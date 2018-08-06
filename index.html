@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prepare number</title>
+    </head>
+    <body>
+        <h1>Exercises 3:</h1>
+        <h2>Write a javascript function which when pass this input [1,2,3,4,5,6,7] it will return [1, 9, 25, 49]</h2>
+
+
+        <script>
+            function isNumberOdd(n){
+                return n%2 != 0;
+            }
+
+            var input = [1,2,3,4,5,6,7];
+            var output = [];
+            for(let i=0;i<input.length;i++){
+                if(isNumberOdd(input[i])){
+                    output.push(Math.pow(input[i],2));
+                }
+            }
+            
+            console.log(output);
+        </script>
+    </body>
+</html>
